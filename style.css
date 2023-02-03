@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #121417;
+    font-family: 'Overpass', sans-serif;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+p{
+    color: #959eac;
+    font-weight: 400;
+    line-height: 1.4rem;
+}
+
+.card{
+    background-color: #252d37;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.radio-btn-group{
+    margin: 20px 0px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.input-container{
+    position: relative;
+    height: 3rem;
+    width: 3rem;
+}
+
+.input-container input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+}
+
+input:checked + .radio-title{
+    background-color: #fb7413;
+}
+
+input:hover + .radio-title{
+    background-color: #959eac;
+}
+
+.input-container .radio-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 100px;
+    background-color: #373f47;
+}
+
+.radio-title{
+    color: #fff;
+    font-weight: 500;
+}
+
+img{
+    padding: 15px;
+    background-color: #373f47;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: #fb7413;
+    border: none;
+    border-radius: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+button > p {
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 40px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+button > p:hover{
+    color: #fb7413;
+}
+
+button:hover{
+    background-color: #fff;
+}
+
