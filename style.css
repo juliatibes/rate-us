@@ -71,6 +71,14 @@ input:checked + .radio-title{
     background-color: #fb7413;
 }
 
+input:checked + .radio-title{
+    background-color: #fb7413;
+}
+
+input:focus-within  {
+    background-color: #da0c0c;
+}
+
 input:hover + .radio-title{
     background-color: #959eac;
 }
@@ -105,22 +113,15 @@ button{
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    
-}
-
-button, a {
     color: #fff;
     font-weight: 700;
     padding: 10px 40px;
     letter-spacing: 2px;
-    width: 100%;
-}
-
-button, a:hover{
-    color: #fb7413;
+    cursor: pointer;
 }
 
 button:hover{
+    color: #fb7413;
     background-color: #fff;
 }
 
