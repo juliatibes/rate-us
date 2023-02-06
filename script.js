@@ -1,18 +1,34 @@
-let radioBtn = document.querySelectorAll('input[name="rating"]');
-let selectedRadio = document.getElementById('selectedRadio')
+// document.getElementById('submit').onclick = function(){
+//     var value = document.getElementsByName('rating');
+//     for (var radio of value){
+//     if (radio.checked) {    
+//     console.log(radio.value);
+//     }}}
 
-let findSelected = () => {
-    let selected = document.querySelector('input[name=rating]:checked').value
-    console.log(selected)
-}
+    
 
-radioBtn.array.forEach(radioBtn => {
-    radioBtn.addEventListener('checked', findSelected);
+
+
+
+// let radioBtn = document.querySelectorAll('input[name="rating"]');
+// let selectedRadio = document.getElementById('selectedRadio')
+let btnSubmit = document.querySelector('button');
+let result = document.querySelector('span');
+
+
+btnSubmit.addEventListener('click', () => {
+    let selected = document.querySelector('input[type="radio"]:checked');
+    result.innerText = selected.value
+    console.log(selected.value)
 });
+
+// radioBtn.array.forEach(radioBtn => {
+//     radioBtn.addEventListener('focus', findSelected);
+// });
 
 
 // function radioSelected () {
-//     const radio = document.getElementsById('#rating');
+//     const radio = document.getElementsByClassName('.rating');
 //     let value = radio.input[radio.checked].value;
 //     console.log(value)
 // }
